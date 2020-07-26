@@ -52,16 +52,6 @@ export class NgxDatatableComponent implements OnInit {
 
 
 
-  // constructor() {
-  //   this.temp = this.rows.map((prop,key)=>{
-  //     return {
-  //       ...prop,
-  //       id: key
-  //     };
-
-  //   });
-  // }
-
 
   constructor(private toastr: ToastrService) {
 

@@ -3,11 +3,15 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import * as Chartist from "chartist";
 
 
+
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.css"]
 })
+
+
+
 export class DashboardComponent implements OnInit {
   public gradientStroke;
   public chartColor;
@@ -68,39 +72,66 @@ export class DashboardComponent implements OnInit {
   activeRow: any;
   rows: any = [
     {
-      name: "Tiger Nixon",
-      account: "12311220",
-      office: "Edinburgh",
-      amount: "1000"
+      clientid: "111000",
+      accountid: "112-123-100251",
+      amount: "1000",
+      sdcstatus: "Regular",
+      opdstatus: "Success",
+      creditstatus: "Success",
+      overallstatus: "Success"
+      
     },
     {
-      name: "Garrett Winters",
-      account: "12311222",
-      office: "Tokyo",
-      amount: "6300"
+      clientid: "111002",
+      accountid: "112-123-100251",
+      amount: "1000",
+      sdcstatus: "Regular",
+      opdstatus: "Success",
+      creditstatus: "Success",
+      overallstatus: "Success"
     },
     {
-      name: "Ashton Cox",
-      account: "12311223",
-      office: "San Francisco",
-      amount: "660"
+      clientid: "111003",
+      accountid: "112-123-100251",
+      amount: "1000",
+      sdcstatus: "Regular",
+      opdstatus: "Success",
+      creditstatus: "Success",
+      overallstatus: "Success"
     },
     {
-      name: "Cedric Kelly",
-      account: "12311225",
-      office: "Edinburgh",
-      amount: "2200"
+      clientid: "111004",
+      accountid: "112-123-100251",
+      amount: "1000",
+      sdcstatus: "Regular",
+      opdstatus: "Success",
+      creditstatus: "Success",
+      overallstatus: "Success"
     },
 
 
     {
-      name: "Olivia Liang",
-      account: "12311226",
-      office: "Singapore",
-      amount: "6450"
+      clientid: "111005",
+      accountid: "112-123-100251",
+      amount: "1000",
+      sdcstatus: "Regular",
+      opdstatus: "Success",
+      creditstatus: "Success",
+      overallstatus: "Success"
     }
   ];
 
+
+  // rows = [
+  //   { name: 'Austin', gender: 'Male', company: 'Swimlane' },
+  //   { name: 'Dany', gender: 'Male', company: 'KFC' },
+  //   { name: 'Molly', gender: 'Female', company: 'Burger King' },
+  // ];
+  // columns = [
+  //   { prop: 'name' },
+  //   { name: 'Gender' },
+  //   { name: 'Company' }
+  // ];
 
 
   constructor() {
@@ -115,49 +146,49 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  entriesChange($event){
-    this.entries = $event.target.value;
-  }
-  filterTable($event) {
-    let val = $event.target.value;
-    this.temp = this.rows.filter(function(d) {
+//   entriesChange($event){
+//     this.entries = $event.target.value;
+//   }
+//   filterTable($event) {
+//     let val = $event.target.value;
+//     this.temp = this.rows.filter(function(d) {
 
-      for(var key in d){
-        if(d[key].toLowerCase().indexOf(val) !== -1){
-          return true;
-        }
-      }
-      return false;
-    });
-  }
-  onSelect($event) {
-   console.log('Select Event', $event);
- }
- onActivate(event) {
-    this.activeRow = event.row;
-  }
-  likeFunction($event){
-    $event.preventDefault();
-    let details = "You've clicked LIKE button on \n{\n";
-    for(var key in this.activeRow){
-      details += key + ": " + this.activeRow[key] + "\n";
-    }
-    details += "}.";
-    alert(details);
-  }
-  editFunction($event){
-    $event.preventDefault();
-    let details = "You've clicked EDIT button on \n{\n";
-    for(var key in this.activeRow){
-      details += key + ": " + this.activeRow[key] + "\n";
-    }
-    details += "}.";
-    alert(details);
-  }
-  deleteFunction($event){
-    $event.preventDefault();
-    this.temp = this.rows.filter(entry => entry.id !== this.activeRow.id);
-  }
+//       for(var key in d){
+//         if(d[key].toLowerCase().indexOf(val) !== -1){
+//           return true;
+//         }
+//       }
+//       return false;
+//     });
+//   }
+//   onSelect($event) {
+//    console.log('Select Event', $event);
+//  }
+//  onActivate(event) {
+//     this.activeRow = event.row;
+//   }
+//   likeFunction($event){
+//     $event.preventDefault();
+//     let details = "You've clicked LIKE button on \n{\n";
+//     for(var key in this.activeRow){
+//       details += key + ": " + this.activeRow[key] + "\n";
+//     }
+//     details += "}.";
+//     alert(details);
+//   }
+//   editFunction($event){
+//     $event.preventDefault();
+//     let details = "You've clicked EDIT button on \n{\n";
+//     for(var key in this.activeRow){
+//       details += key + ": " + this.activeRow[key] + "\n";
+//     }
+//     details += "}.";
+//     alert(details);
+//   }
+//   deleteFunction($event){
+//     $event.preventDefault();
+//     this.temp = this.rows.filter(entry => entry.id !== this.activeRow.id);
+//   }
 
   ngOnInit() {
     this.gradientChartOptionsConfiguration = {

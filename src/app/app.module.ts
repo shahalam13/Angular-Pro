@@ -4,7 +4,7 @@ import { RouterModule } from "@angular/router";
 import { ComponentsModule } from "./components/components.module";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ToastrModule } from "ngx-toastr";
-
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AppComponent } from "./app.component";
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 import { AuthLayoutComponent } from "./layouts/auth-layout/auth-layout.component";
@@ -15,6 +15,7 @@ import { AppRoutes } from "./app.routing";
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   imports: [
     BrowserAnimationsModule,
+    NgxDatatableModule,
     RouterModule.forRoot(AppRoutes,{
       useHash: true
     }),

@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import { ChartsModule } from "ng2-charts/ng2-charts";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ComponentsModule } from "../../components/components.module";
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import { DashboardRoutes } from "./dashboard.routing";
 
@@ -13,6 +14,7 @@ import { DashboardComponent } from "./dashboard.component";
   imports: [
     CommonModule,
     NgbModule,
+    NgxDatatableModule,
     RouterModule.forChild(DashboardRoutes),
     ComponentsModule,
     ChartsModule

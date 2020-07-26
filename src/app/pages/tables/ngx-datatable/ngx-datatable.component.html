@@ -67,8 +67,8 @@
               Actions
             </ng-template>
             <ng-template ngx-datatable-cell-template let-value="value" let-isSelected="isSelected" let-onCheckboxChangeFn="onCheckboxChangeFn">
-              <a href="#" class="btn btn-round btn-info btn-icon btn-sm like" (click)="likeFunction($event)"><i class="fas fa-heart"></i></a>
-              <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit" (click)="editFunction($event)"><i class="far fa-calendar-alt"></i></a>
+              <a href="#" class="btn btn-round btn btn-success btn-icon btn-sm like" (click)="editFunction($event)"><i class="fas fa-eye"></i></a>
+              <a href="#" class="btn btn-round btn-danger btn-icon btn-sm edit" (click)="deleteFunction($event)"><i class="fas fa-trash"></i></a>
              
             </ng-template>
         </ngx-datatable-column>
