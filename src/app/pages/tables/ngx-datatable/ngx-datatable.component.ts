@@ -11,7 +11,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 })
 export class NgxDatatableComponent implements OnInit {
   test: any =  `<button (click)="onSelect($event)">Click me</button>`;
-  entries: number = 4;
+  entries: number = 10;
   selected: any[] = [];
   temp = [];
   activeRow: any;
