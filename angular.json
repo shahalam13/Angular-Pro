@@ -29,7 +29,7 @@
               "src/styles.css",
               "src/assets/demo/demo.css",
               "node_modules/sweetalert2/src/sweetalert2.scss",
-              "src/assets/css/index.css",
+              "node_modules/@swimlane/ngx-datatable/release/index.css",
               "node_modules/@swimlane/ngx-datatable/src/themes/bootstrap.scss",
               "node_modules/@swimlane/ngx-datatable/assets/icons.css",
               "src/assets/scss/now-ui-dashboard.scss",

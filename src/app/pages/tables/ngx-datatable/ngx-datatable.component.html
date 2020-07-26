@@ -9,6 +9,8 @@
           <div class="toolbar">
             <!--        Here you can write extra buttons/actions for the toolbar              -->
           </div>
+
+
           <div class="dataTables_wrapper">
             <div class="row">
               <div class="col-sm-12 col-md-6">
@@ -56,22 +58,22 @@
               (activate)="onActivate($event)"
             >
 
+          <ngx-datatable-column name="Name"></ngx-datatable-column>
           <ngx-datatable-column name="Account"></ngx-datatable-column>
-          <ngx-datatable-column name="CompleteReject"></ngx-datatable-column>
-     
+         
+          <ngx-datatable-column name="Amount"></ngx-datatable-column>
           <ngx-datatable-column [sortable]="false" [canAutoResize]="false" [draggable]="false" [resizeable]="false">
             <ng-template ngx-datatable-header-template let-value="value" let-allRowsSelected="allRowsSelected" let-selectFn="selectFn">
               Actions
             </ng-template>
             <ng-template ngx-datatable-cell-template let-value="value" let-isSelected="isSelected" let-onCheckboxChangeFn="onCheckboxChangeFn">
-              <a href="#" class="btn btn-round btn-info btn-icon btn-sm like" (click)="likeFunction($event)"><i class="fas fa-eye"></i></a>
+              <a href="#" class="btn btn-round btn-info btn-icon btn-sm like" (click)="likeFunction($event)"><i class="fas fa-heart"></i></a>
               <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit" (click)="editFunction($event)"><i class="far fa-calendar-alt"></i></a>
-     
+             
             </ng-template>
         </ngx-datatable-column>
             </ngx-datatable>
           </div>
-
         </div>
       </div>
     </div>
@@ -132,7 +134,7 @@
               
 
               <div class="col-md-4 px-1">
-                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span>1000 USD</h3>
+                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span> 1000 USD</h3>
               </div>
             </div>
             
@@ -211,7 +213,7 @@
               
 
               <div class="col-md-4 px-1">
-                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span>1000 USD</h3>
+                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span> 1000 USD</h3>
               </div>
             </div>
             
@@ -301,7 +303,7 @@
               
 
               <div class="col-md-4 px-1">
-                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span>1000 USD</h3>
+                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span> 1000 USD</h3>
               </div>
             </div>
             
@@ -383,7 +385,7 @@
               
 
               <div class="col-md-4 px-1">
-                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span>1000 USD</h3>
+                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span> 1000 USD</h3>
               </div>
             </div>
             
@@ -465,7 +467,7 @@
               
 
               <div class="col-md-4 px-1">
-                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span>1000 USD</h3>
+                <h3 class="card-category" style="color: black; font-size: medium;"><span  style="color: black; font-weight: bold; font-size: medium;">Amount :</span> 1000 USD</h3>
               </div>
             </div>
             

@@ -17,27 +17,36 @@ export class NgxDatatableComponent implements OnInit {
   activeRow: any;
   rows: any = [
     {
-      Account: "112-123-100251",
-      CompleteReject: "System Architect"
-     
+      name: "Chao Lee",
+      account: "112123100251",
+      office: "Edinburgh",
+      amount: "1000"
     },
     {
-      Account: "112-123-100251",
-      CompleteReject: "Accountant"
-    
+      name: "Garrett Winters",
+      account: "112123100256",
+      office: "Tokyo",
+      amount: "6300"
     },
-    
     {
-      Account: "112-123-100251",
-      CompleteReject: "Sales Assistant"
-     
+      name: "Ashton Cox",
+      account: "112123100257",
+      office: "San Francisco",
+      amount: "660"
     },
-   
-    
     {
-      Account: "112-123-100251",
-      CompleteReject: "Chief Financial Officer (CFO)"
-     
+      name: "Cedric Kelly",
+      account: "112123100250",
+      office: "Edinburgh",
+      amount: "2200"
+    },
+
+
+    {
+      name: "Olivia Liang",
+      account: "112123100256",
+      office: "Singapore",
+      amount: "6450"
     }
   ];
 
